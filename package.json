@@ -1,0 +1,23 @@
+{
+  "name": "star-wars-mad-libs",
+  "version": "1.0.0",
+  "description": "This is a demo based on a project I did in school originally to for a JavaScript assignment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node-sass src/sass/style.scss src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjorgens/star-wars-mad-libs.git"
+  },
+  "author": "Marc Jorgensen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjorgens/star-wars-mad-libs/issues"
+  },
+  "homepage": "https://github.com/mjorgens/star-wars-mad-libs#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
