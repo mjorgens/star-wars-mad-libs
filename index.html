@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Star Wars Mad Lib</title>
+    <meta name="description" content="Star Wars Mad Lib demo using css and javascript!" />
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <script src="js/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="input" class="input">
+      <h1>Star Wars Mad Lib</h1>
+      <form>
+        <input id="noun1" type="text" placeholder="Enter a Noun">
+        <input id="noun2" type="text" placeholder="Enter a Noun">
+        <input id="verb1" type="text" placeholder="Enter a Verb">
+        <input id="verb2" type="text" placeholder="Enter a Verb">
+        <input id="adj1" type="text" placeholder="Enter a Adjective">
+        <input id="adj2" type="text" placeholder="Enter a Adjective">
+        <input type="button" name="go" value="Mad Lib it!" onclick="madLib();">
+      </form>
+    </div>
+    <section class="star-wars">
+      <div id="crawl" class="hidden">
+        <div class="title">
+          <p>Episode IV</p>
+          <h2>A New Hope</h2>
+        </div>
+        <p id="story1"></p>
+        <p id="story2"></p>
+        <p id="story3"></p>
+      </div>
+    </section>
+  </body>
+</html>

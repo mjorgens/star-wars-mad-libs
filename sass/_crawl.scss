@@ -1,0 +1,44 @@
+/* Crawl Style and Animation was used from a tutorial by GEOFF GRAHAM @ https://css-tricks.com/snippets/css/star-wars-crawl-text/ */
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 50rem;
+  color: $text-color;
+  font-family: $font-family;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: .375rem;
+  line-height: 150%;
+  perspective: 25rem;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+
+  &  > .title {
+    font-size: 90%;
+    text-align: center;
+
+    & h2 {
+      margin: 0 0 6.25rem;
+      text-transform: uppercase;
+    }
+  } 
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}

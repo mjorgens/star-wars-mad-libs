@@ -1,0 +1,59 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: $bg-color;
+  overflow: hidden;
+  color: $text-color;
+  font-family: $font-family;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.input {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 31rem;
+}
+
+input {
+  border-radius: 0.25rem;
+  border: 0.125rem solid $input-border-color;
+
+  &[type="text"] {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+    background-color: $input-text-bg-color;
+    color: $input-text-text-color;
+
+    &:focus {
+      border: 0.1875rem solid $input-text-border-color-focus;
+    }
+  }
+
+  &[type="button"] {
+    background-color: $input-button-bg-color;
+    color: $input-button-text-color;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $input-button-bg-color-hover;
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
